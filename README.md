@@ -1,7 +1,6 @@
-<h1 align="center">Goal</h1>
+<h1 align="center">Generic query param</h1>
 
-<h3 align="center">Useful to create Query string with a DTO in Typescript.</h3>
-<p align="center"><em>Generic solution</em></p>
+<h3 align="center"><em>Useful to create Query string with a DTO in Typescript.</em></h3>
 
 ```ts
 const queryParams: QueryParams<MyEntity> = {
@@ -14,3 +13,7 @@ Into
 ```ts
 "id=1&name=R2-D2"
 ```
+</br>
+Have fun 
+
+[Playground Link](https://www.typescriptlang.org/play?#code/PTAEFEA8EMFsAcA2BTUBXAztA5sgXALABQAlgHYAuyATgGbQDGqAQtBsuJSRQJ6gDexUKBIATPKDJpYAIxoBuIaAoYJAEWhVFRAL7Fi5KnUaoAsj04VufZJCplRGUK3aXrApWTj5QGCtXJsbWFGKwA3HxkAeyiUaDJg0A0qAGFqZE1kcSTM7T0iYl54VABBCgAZDL8AeTJkAB4AFQAaUABVUABeAQBtAGkRMlAAa2QeKNpQRoBdCQAFEgZhpta+gD5QHQ3uuehqK2hEJo2AMnae0fHJtuntECmeYtBaKOpQAEc0Gj54Pe8jJxkKIAd1A6U+JHSTk0oDiflAUTqIzGz2oUVgoHMbl4hUeqAAil9qDxdtQ4Bh6tibHZkA4nC4OFxeNtQGVKmwKLUGlS1tpiMAAFQCoQC0ApRERfbQoZRGQAK2QDAoCMmn2+oF+ZNgyABgwoUVA0A+RL4fgCZGwADoRaAAAKauAav6wJwAWimAAtULKFUrQAxERRoORAsovcb1Q7tQDrURQKLbekKGhqGQnI1w7g6mSqKII8TfP5ArH48BiLQ0GQlSREcoooTvgBlIsWpqgWz2RzONiMqzMgAUUdUoFJByODeJpPJxzWAEoJGbQ4I4yJJv3qvLFRRLZcMIPnRhZ5aUBaKB6up1ugAGWceFfCJMpoYAcmf8lA93Ae0QfEfqeerztggvCDPAaAUEo+RKH+Qwbr6260kWyB7kOs5KMIwiWrQJCIEY-b9j0rRhIcXzTLenQbMRiBfKAACEl7oA4yDYXUeYnGcVE0fR3RSIgiC3vcABiOFGAi4GMaIzHkFkoCcch6EYZasDQPA+EXGMREkcgZFdBsy4YQZGEBmmyqLhaABqWldLJVnkH48RMBMORUKAAD8NnUcglr6gAko21TNua2D9reEhyd5USBYEIWJIZGEwaAAAGAAk-C0gGkltAASj54oIIiiH9pcs46J0qXpVEmU5Xl8AFZQ-ZmdglmeSViWxRhOhofeilylE5D9s+JzPrOeT6AURDGfCaqTgeEgTiSB71FiTI8Cyy4AJBiBIACMzTEOtXjahIABEWUAEyumoZ3HXtuh8uN9xtBgoZnqg00LVqTg+luqLooa0QRMQk3Ku9UUWtZ+rzWDwXvVOLojUDiIYLEXmIFEMMmtDCPjUAA)
