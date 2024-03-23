@@ -10,22 +10,16 @@ interface MyEntity extends BaseEntity {
   DateCreated: Date;
 }
 
-
-type NotEmpty<T> = keyof T extends never ? never : T
+type AtLeastOne<T, U = {[K in keyof T]: Pick<T, K> }> = Partial<T> & U[keyof U];
 // Type for query parameters now requires at least one key from MyEntity
-type QueryParams<Entity extends BaseEntity> = Partial<NotEmpty<Entity>> ;
-
-const queryParams: QueryParams<MyEntity> = {
-  id: 1,
-};
-
+type QueryParams<Entity extends BaseEntity> = AtLeastOne<Entity>;
 
 /**
  * Converts an object of query parameters into a query string.
  * @param params - The object containing the query parameters.
  * @returns The generated query string.
  */
-function toQueryString<T extends BaseEntity>(params: QueryParams<T>): string {
+function toQueryString<T extends BaseEntity>(params: Partial<QueryParams<T>>): string {
   if (Object.keys(params).length === 0) {
     return ''; // Early return for empty input
   }
@@ -38,6 +32,14 @@ function toQueryString<T extends BaseEntity>(params: QueryParams<T>): string {
       })
       .join('&');
 }
+
+
+const queryParams: QueryParams<MyEntity> = {
+  id: 1,
+  name: "R2-D2",
+};
+
+
 
 // Using the queryParams object from above
 const queryString = toQueryString(queryParams);
